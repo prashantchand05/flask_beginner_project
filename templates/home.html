@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>career site</title> 
+    <style>
+      h1{
+        font-size: 40px;
+        font-family: Roboto;
+        font-weight:normal;
+        color:rgb(100,100,100);
+        text-align: center;
+      }
+      h2{
+      font-size: 32px;
+      font-family: Roboto;
+      font-weight:normal;
+      color:rgb(100,100,100);
+      text-align: center;
+      }
+
+        .bodytext{
+          font-family: Roboto;
+          color:rgb(80,80,80);
+        }
+    </style>
+  </head>
+  <body>
+ <h1>Career searching </h1>
+    <img id="careers" src ="C:\Users\PRASHANT CHAND\Downloads\careers.jpg">
+    <h2>About Career Searching</h2>
+    <p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </p>
+    <h2>Open Positions</h2>
+    
+    <div>
+      {% for job in jobs %}
+
+      {% include 'jobitem.html' %}
+      
+      {% endfor %}
+    </div>
+    
+    <div style="text-align:center;">
+    <button>contact us </button>
+      <p>Copyright 2024 ,career site</p>
+    </div>
+  </body>
+</html>
